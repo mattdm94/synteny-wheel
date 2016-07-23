@@ -1,0 +1,9 @@
+This is an implementation of a data structure for navigating links between
+two circular genomes. It is a small piece of an extension to my code-base
+I am planning to do in the near(ish) future.
+
+I have implemented all the IO and general structure. What remains to be
+done is filling out the functions in algorithms.c.
+
+If anything is unclear, or if you have any questions, feel free to write
+me.
