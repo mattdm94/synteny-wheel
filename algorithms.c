@@ -45,7 +45,12 @@ void recursive_print_r(struct Link * link, size_t order_by, struct Link * stop_l
 
 struct Link * winnow_r(struct Link * link, float threshold, struct Link * stop_link){
 
-    // for loop to check scores of each link
+    while(next != NULL){
+        if(link.score < threshold){
+            delete_link(link);
+            next = next->next;
+        }
+    }
 
     return link;
 }
