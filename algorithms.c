@@ -10,20 +10,42 @@
 
 struct Link * get_minimum_r(struct Link * link, size_t order_by, struct Link * current_min){
 
-    // TODO: Fill in the code
+    // where we sort base on what genome a or b
+    
+    if(order_by == 0){ //a genome
+        //use cmp_by_a function
+    }
+    else if(order_by == 1){ // b genome
+        //use cmp_by_b function
+    }
+    else{
+        printf("Please enter 0 or 1");
+    }
 
-    return link;
+    return current_min;
 }
 
 void recursive_print_r(struct Link * link, size_t order_by, struct Link * stop_link){
-
-    // TODO: Fill in the code
+    
+    //first sort by what genome it is
+    if(order_by == 0){
+        //use cmp_by_a function
+        printf("");
+    }
+    else if(order_by == 1){
+        ///use cmp_by_b function
+        printf("");
+    }
+    else{
+        printf("Please enter 0 or 1");
+    }
+    
 
 }
 
 struct Link * winnow_r(struct Link * link, float threshold, struct Link * stop_link){
 
-    // TODO: Fill in the code
+    // for loop to check scores of each link
 
     return link;
 }
